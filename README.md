@@ -1,0 +1,63 @@
+Dockerfile-gox [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/tcnksm/dockerfile-gox/blob/master/LICENCE)
+====
+
+[tcnksm/gox Repository | Docker Hub Registry - Repositories of Docker Images](https://registry.hub.docker.com/u/tcnksm/gox/)
+
+Cross-compile golang project with [mitchellh/gox](https://github.com/mitchellh/gox) inside Docker container.
+
+## Description
+
+[docker-library/golang](https://github.com/docker-library/golang) (Docker official golang stack) also support image for cross-compile. With `Dockerfile-gox`, You can cross-compile your golang project parallelly. It's more fast when compiling for multiple platform.
+
+## Supported tags
+
+`tcnksm/gox` image support below tags. Link is its `Dockerfile`. 
+
+- [`1.2` (1.2/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.2/Dockerfile)
+- [`1.2.1` (1.2.1/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.2.1/Dockerfile)
+- [`1.2.2` (1.2.2/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.2.2/Dockerfile)
+- [`1.3` (1.3/Docekerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3/Dockerfile)
+- [`1.3.1` (1.3.1/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3.1/Dockerfile)
+
+Tag is correspond to its golang version. 
+
+## Usage
+
+If you want to cross-compile with go v1.3.1:
+
+```bash
+$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.3.1 
+```
+
+Or if you want to cross-compile with go v1.2:
+
+```bash
+$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.2 
+```
+
+You can overwrite command. If you have Makefile with `gox`:
+
+```bash
+$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.3.1 make 
+```
+
+Or if you want to build for 64-bit linux and change output to `pkg` directory with your favor name:
+
+```bash
+$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.3.1 gox -osarch="linux/amd64" -output "pkg/{{.OS}}_{{.Arch}}/{{.Dir}}"
+```
+
+If you want to know `gox` arguments more, See documents in [mitchellh/gox](https://github.com/mitchellh/gox). 
+
+## Contribution
+
+1. Fork ([https://github.com/tcnksm/dockerfile-gox/fork](https://github.com/tcnksm/dockerfile-gox/fork))
+1. Create a feature branch
+1. Commit your changes
+1. Rebase your local changes against the master branch
+1. Push it to your remote repository
+1. Create new Pull Request
+
+## Author
+
+[tcnksm](https://github.com/tcnksm)
