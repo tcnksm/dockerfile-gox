@@ -1,5 +1,7 @@
-Dockerfile-gox [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/tcnksm/dockerfile-gox/blob/master/LICENCE)
+Dockerfile-gox [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][LICENSE]
 ====
+
+[LICENSE]: https://github.com/tcnksm/dockerfile-gox/blob/master/LICENCE
 
 [tcnksm/gox Repository | Docker Hub Registry - Repositories of Docker Images](https://registry.hub.docker.com/u/tcnksm/gox/)
 
