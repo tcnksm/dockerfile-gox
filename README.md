@@ -19,9 +19,12 @@ Dockerfile for Cross-compiling golang project with [mitchellh/gox](https://githu
 - [`1.3` (1.3/Docekerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3/Dockerfile)
 - [`1.3.1` (1.3.1/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3.1/Dockerfile)
 - [`1.3.2` (1.3.2/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3.2/Dockerfile)
+    - [`1.3.2-light` (1.3.2/light/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3.2/light/Dockerfile)
 - [`1.4` (1.4/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.4/Dockerfile)
 - [`1.4.1` (1.4.1/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.4/Dockerfile)
 - [`1.4.2` (1.4.2/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.4.2/Dockerfile)
+    - [`1.4.2-light` (1.4.2/light/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.4.2/light/Dockerfile)
+
 
 Tag is correspond to its golang version. 
 
@@ -51,7 +54,20 @@ Or if you want to build for 64-bit linux and change output to `pkg` directory wi
 $ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.3.1 gox -osarch="linux/amd64" -output "pkg/{{.OS}}_{{.Arch}}/{{.Dir}}"
 ```
 
-If you want to know `gox` arguments more, See documents in [mitchellh/gox](https://github.com/mitchellh/gox). 
+If you want to know `gox` arguments more, See documents in [mitchellh/gox](https://github.com/mitchellh/gox).
+
+## light image
+
+`light` tag provide light image. It only provides `linux` and `darwin`, `windows` build-chain. If you don't need other platform, use this image. You can use it in same way as ordinal one. 
+
+Here is image size comparison, 
+
+```bash
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+tcnksm/gox          1.4.2               98d4147293ca        23 seconds ago      1.787 GB
+tcnksm/gox          1.4.2-light         9e30b7109b86        5 minutes ago       533.1 MB
+```
 
 ## Contribution
 
