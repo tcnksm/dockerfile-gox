@@ -31,22 +31,22 @@ Tag is correspond to its golang version.
 
 ## Usage
 
-If you want to cross-compile with go v1.3.1:
+If you want to cross-compile with go v1.5:
 
 ```bash
-$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.3.1 
+$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.5 
 ```
 
-Or if you want to cross-compile with go v1.2:
+Or if you want to cross-compile with go v1.4:
 
 ```bash
-$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.2 
+$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.4 
 ```
 
 You can overwrite command. If you have Makefile with `gox`:
 
 ```bash
-$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.3.1 make 
+$ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.5 make 
 ```
 
 Or if you want to build for 64-bit linux and change output to `pkg` directory with your favor name:
