@@ -17,18 +17,18 @@ Dockerfile for Cross-compiling golang project with [mitchellh/gox](https://githu
 
 `tcnksm/gox` image support below tags. Link is its `Dockerfile`. 
 
-- [`1.2.2` (1.2.2/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.2.2/Dockerfile)
-- [`1.3` (1.3/Docekerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3/Dockerfile)
-- [`1.3.1` (1.3.1/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3.1/Dockerfile)
-- [`1.3.2` (1.3.2/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.3.2/Dockerfile)
-- [`1.4` (1.4/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.4/Dockerfile)
-- [`1.4.1` (1.4.1/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.4/Dockerfile)
-- [`1.4.2` (1.4.2/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.4.2/Dockerfile)
-- [`1.5` (1.5/Dockerfile)](https://github.com/tcnksm/dockerfile-gox/blob/master/1.5/Dockerfile)
-- [`1.5.1` (1.5.1/Dockerfile)](/1.5.1/Dockerfile)
-- [`1.5.2` (1.5.2/Dockerfile)](/1.5.2/Dockerfile)
-- [`1.5.3` (1.5.3/Dockerfile)](/1.5.3/Dockerfile)
-
+- [`1.2.2` (1.2.2/Dockerfile)](1.2.2/Dockerfile)
+- [`1.3` (1.3/Docekerfile)](1.3/Dockerfile)
+- [`1.3.1` (1.3.1/Dockerfile)](1.3.1/Dockerfile)
+- [`1.3.2` (1.3.2/Dockerfile)](1.3.2/Dockerfile)
+- [`1.4` (1.4/Dockerfile)](1.4/Dockerfile)
+- [`1.4.1` (1.4.1/Dockerfile)](1.4.1/Dockerfile)
+- [`1.4.2` (1.4.2/Dockerfile)](1.4.2/Dockerfile)
+- [`1.5` (1.5/Dockerfile)](1.5/Dockerfile)
+- [`1.5.1` (1.5.1/Dockerfile)](1.5.1/Dockerfile)
+- [`1.5.2` (1.5.2/Dockerfile)](1.5.2/Dockerfile)
+- [`1.5.3` (1.5.3/Dockerfile)](1.5.3/Dockerfile)
+- [`1.6` (1.6/Dockerfile)](1.6/Dockerfile)
 
 Tag is correspond to its golang version. 
 
