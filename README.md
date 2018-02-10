@@ -66,6 +66,15 @@ $ docker run --rm -v "$(pwd)":/usr/src/myapp -w /usr/src/myapp tcnksm/gox:1.3.1 
 
 If you want to know `gox` arguments more, See documents in [mitchellh/gox](https://github.com/mitchellh/gox).
 
+## Build 
+
+To build image,
+
+```bash
+$ docker build -t tcnksm/gox:${VERSION} .
+$ docker push tcnksm/gox:${VERSION}
+```
+
 ## Contribution
 
 1. Fork ([https://github.com/tcnksm/dockerfile-gox/fork](https://github.com/tcnksm/dockerfile-gox/fork))
