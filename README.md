@@ -35,7 +35,8 @@ Dockerfile for Cross-compiling golang project with [mitchellh/gox](https://githu
 - [`1.7` (1.7/Dockerfile)](1.7/Dockerfile)
 - [`1.9` (1.9/Dockerfile)](1.9/Dockerfile)
 - [`1.10.3` (1.10.3/Dockerfile)](1.10.3/Dockerfile)
-- [`latest` (1.10.3/Dockerfile)](1.10.3/Dockerfile)
+- [`1.11.2` (1.11.2/Dockerfile)](1.11.2/Dockerfile)
+- [`latest` (1.11.2/Dockerfile)](1.11.2/Dockerfile)
 
 Tag is correspond to its golang version. 
 
